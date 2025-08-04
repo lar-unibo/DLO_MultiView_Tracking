@@ -39,7 +39,13 @@ cd /docker_camere/ros2_ws/src/pipy && pip install -e .
 cd /docker_camere/ros2_ws/src/dlo_python && pip install -e .
 ```
 
+
+Download the segmentation model (*.pth) for extracting the DLO state from the images [link]([mega](https://mega.nz/file/hMUhGbiT#mdodEgnuWR_6jnfvLI2W6KKYp0UUAmdVs4Nt2Lj3xNU))
+
+
 Now everything is ready!!!
+
+
 
 
 ## 4. How to Run
