@@ -1,4 +1,17 @@
-## 1. Building
+Robotic Manipulation of Deformable Linear Objects via Multiview Model-Based Visual Tracking
+
+Published in: IEEE/ASME Transactions on Mechatronics
+
+Access the paper: [Open Access](https://ieeexplore.ieee.org/document/10993307)
+
+
+
+The manipulation of deformable linear objects (DLOs)—such as electrical cables, wires, and hoses—is common in various industrial processes. Currently, this task is typically performed by human operators, making it labor-intensive, inefficient, and prone to errors. Consequently, developing robotic solutions for DLOs manipulation is crucial for improving both industrial efficiency and quality. This article addresses the challenge of tracking the state of DLOs during robotic manipulation, a key requirement for achieving accurate and reliable control. To this end, we propose a novel model-based multiview visual tracking algorithm. The algorithm integrates a predictive model of DLO behavior based on the Cosserat rod formulation and employs an NN-based approximation to enable efficient evaluation of DLO shapes. By guiding visual perception with the predictive model, the algorithm effectively manages occlusions and estimates the 3-D shape of the manipulated DLO in cluttered environments. This is accomplished by triangulating simple 2-D images, enabling seamless integration into existing robotic systems without the need for costly and often unreliable 3-D sensors. The proposed method is evaluated in both simulated and real-world scenarios, demonstrating its effectiveness in reliably tracking thin DLOs in 3-D environments.
+
+
+
+
+## 1. Building Docker Environment
 
 Build the Docker container with
 
