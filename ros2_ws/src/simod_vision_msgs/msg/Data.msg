@@ -1,0 +1,9 @@
+sensor_msgs/Image mask
+sensor_msgs/Image img
+std_msgs/Float32MultiArray bbox
+std_msgs/Float32MultiArray tcps_proj
+std_msgs/Float32MultiArray p2d_model
+std_msgs/Float32MultiArray p2d_vision
+std_msgs/Float32MultiArray curr_frame_1
+std_msgs/Float32MultiArray curr_frame_2
+int32 ready

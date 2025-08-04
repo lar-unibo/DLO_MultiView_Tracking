@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robotiq_wiring">
+  <link name="world"/>
+  <joint name="joint_name" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <parent link="world" />
+      <child link="wiring_gripper" />
+  </joint>
+  
+  <link
+    name="wiring_gripper">
+    <inertial>
+      <origin
+        xyz="0.056379 4.9794E-05 0.00020009"
+        rpy="0 0 0" />
+      <mass
+        value="2.6404" />
+      <inertia
+        ixx="0.0014834"
+        ixy="-3.7391E-06"
+        ixz="3.3528E-06"
+        iyy="0.002045"
+        iyz="8.3983E-06"
+        izz="0.0020565" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotiq_wiring/meshes/wiring_gripper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.31765 0.24706 0.20784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotiq_wiring/meshes/wiring_gripper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="finger_left">
+    <inertial>
+      <origin
+        xyz="-0.041146 0.063717 0.0094944"
+        rpy="0 0 0" />
+      <mass
+        value="0.19486" />
+      <inertia
+        ixx="4.9675E-05"
+        ixy="2.4802E-05"
+        ixz="-4.8356E-07"
+        iyy="2.7862E-05"
+        iyz="2.8798E-06"
+        izz="7.1379E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotiq_wiring/meshes/finger_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotiq_wiring/meshes/finger_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wGripper_to_leftFinger"
+    type="prismatic">
+    <origin
+      xyz="0.1133 0 0"
+      rpy="0 0.87266 -1.5708" />
+    <parent
+      link="wiring_gripper" />
+    <child
+      link="finger_left" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.0225"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="finger_right">
+    <inertial>
+      <origin
+        xyz="0.040691 0.063717 0.0095363"
+        rpy="0 0 0" />
+      <mass
+        value="0.19486" />
+      <inertia
+        ixx="4.9675E-05"
+        ixy="-2.4835E-05"
+        ixz="4.5546E-07"
+        iyy="2.7862E-05"
+        iyz="2.8798E-06"
+        izz="7.1379E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotiq_wiring/meshes/finger_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotiq_wiring/meshes/finger_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftFinger_to_rightFinger"
+    type="prismatic">
+    <origin
+      xyz="1E-05 0 0"
+      rpy="3.1416 0 3.1416" />
+    <parent
+      link="finger_left" />
+    <child
+      link="finger_right" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="wGripper_to_leftFinger"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+</robot>

@@ -1,0 +1,12 @@
+geometry_msgs/Pose[] reference_pose
+int32[] desired_config
+string ur_type
+bool check_q6
+bool verbose
+float64[] last_joints
+---
+message/JointMatrix[] solution
+message/JointMatrix[] complete_solution
+float64[] move_q6
+bool[] success
+float64[] max_error

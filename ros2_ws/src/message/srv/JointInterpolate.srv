@@ -1,0 +1,7 @@
+int32 rate
+std_msgs/Float64MultiArray start_joints
+std_msgs/Float64MultiArray goal_joints
+float64 period
+---
+std_msgs/Float64MultiArray[] joints_trajectory
+bool success

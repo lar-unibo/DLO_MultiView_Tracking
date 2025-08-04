@@ -1,0 +1,15 @@
+
+/oak:
+  ros__parameters:
+    camera:
+      i_enable_imu: true
+      i_enable_ir: false
+      i_nn_type: none
+      i_pipeline_type: rgbtof
+    pipeline_gen:
+      i_enable_sync: true
+    right:
+      i_low_bandwidth: true
+      i_synced: true
+    tof:
+      i_synced: true

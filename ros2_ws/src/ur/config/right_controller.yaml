@@ -1,0 +1,47 @@
+/**:
+  controller_manager:
+    ros__parameters:
+      update_rate: 500  # Hz
+
+      joint_state_broadcaster:
+        type: joint_state_broadcaster/JointStateBroadcaster
+
+      ur_right_joint_group_vel_controller:
+        type: velocity_controllers/JointGroupVelocityController
+
+  joint_state_broadcaster:
+    ros__parameters:
+      joints:
+        - ur_right_shoulder_pan_joint
+        - ur_right_shoulder_lift_joint
+        - ur_right_elbow_joint
+        - ur_right_wrist_1_joint
+        - ur_right_wrist_2_joint
+        - ur_right_wrist_3_joint
+
+  # joint_state_broadcaster:
+  #   ros__parameters:
+  #     use_local_topics: true    
+
+  ur_right_joint_group_vel_controller:
+    ros__parameters:
+      joints:
+        - ur_right_shoulder_pan_joint
+        - ur_right_shoulder_lift_joint
+        - ur_right_elbow_joint
+        - ur_right_wrist_1_joint
+        - ur_right_wrist_2_joint
+        - ur_right_wrist_3_joint
+
+      pid_gains:
+        ur_right_shoulder_pan_joint: {p: 10.0, i: 0.05, d: 0.1}
+        ur_right_shoulder_lift_joint: {p: 10.0, i: 0.05, d: 0.1}
+        ur_right_elbow_joint: {p: 10.0, i: 0.05, d: 0.1}
+        ur_right_wrist_1_joint: {p: 10.0, i: 0.05, d: 0.1}
+        ur_right_wrist_2_joint: {p: 10.0, i: 0.05, d: 0.1}
+        ur_right_wrist_3_joint: {p: 10.0, i: 0.05, d: 0.1}
+  
+      interface_name: velocity
+
+
+      

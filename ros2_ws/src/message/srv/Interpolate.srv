@@ -1,0 +1,7 @@
+int32 rate
+geometry_msgs/Pose start_pose
+geometry_msgs/Pose goal_pose
+float64 vel_cm_s
+---
+geometry_msgs/Pose[] trajectory
+bool success

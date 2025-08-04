@@ -1,0 +1,4 @@
+std_msgs/Float64MultiArray[] reference_joints
+string ur_type
+---
+geometry_msgs/Pose[] reference_pose

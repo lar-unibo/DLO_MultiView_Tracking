@@ -1,0 +1,14 @@
+/**:
+  ros__parameters:
+    camera:
+      i_mx_id: '194430109181281300'
+      i_pipeline_type: 'rgb'
+      i_nn_type: 'rgb'
+    rgb:
+      i_width: 1920 
+      i_height: 1080
+      i_isp_num: 0
+      i_isp_den: 1
+      i_fps: 60.0
+      r_focus: 127
+      r_set_man_focus: true

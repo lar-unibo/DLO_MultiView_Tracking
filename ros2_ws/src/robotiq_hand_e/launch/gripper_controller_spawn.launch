@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name = "gripper_name"   default = "hand_"/>
+
+    <rosparam file="$(find robotiq_hand_e)/config/robotiq_controller.yaml" command="load" subst_value="True"/>
+    <node name="$(arg gripper_name)gripper_ctrl_spwn"  pkg="controller_manager" type="spawner" respawn="false" output="screen" args="$(arg gripper_name)hand_controller" />
+
+</launch>

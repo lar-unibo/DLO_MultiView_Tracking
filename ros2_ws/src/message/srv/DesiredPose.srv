@@ -1,0 +1,5 @@
+float64[] pose
+bool deployment 
+bool go_to_waiting_pose
+---
+bool success

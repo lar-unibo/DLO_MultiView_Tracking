@@ -1,0 +1,6 @@
+---
+float64[] joint_positions_ur
+float64[] joint_velocities_ur
+float64[] joint_positions_base
+float64[] joint_velocities_base
+float64[] odom_pose

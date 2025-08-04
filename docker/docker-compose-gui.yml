@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  simod_vision_ros2:
+    privileged: true
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    environment:
+     - DISPLAY=${DISPLAY}
+     - QT_X11_NO_MITSHM=1
+    network_mode: host
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /tmp/.docker.xauth:/tmp/.docker.xauth:rw
+      - /dev:/dev
+
+      - type: bind
+        source: /home/lar/dev24/DLO_FUSION/ros2_docker/
+        target: /docker_camere
+    command: 
+      /bin/bash -c "source /opt/ros/humble/setup.bash && cd /docker_camere/ros2_ws && terminator"

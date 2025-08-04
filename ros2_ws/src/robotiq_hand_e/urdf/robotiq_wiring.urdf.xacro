@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<robot name="end_effectors" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- istanziare la macro-->
+    
+
+    <xacro:macro name="wiring_gripper"  params="prefix parent rpy:='0 0 0' finger_tip_cor:='0 0 0' xyz:='0 0 0'" > <!-- *origin-->
+        
+        <link name="${prefix}robotiq_hand">
+            <inertial>
+            <origin
+                xyz="-0.000186465319378916 -0.0001114030990718 0.0493790267181303"
+                rpy="0 0 0" />
+           <mass
+                value="0.356812979694354" />
+           <inertia
+                ixx="0.0014834"
+                ixy="-3.7391E-06"
+                ixz="3.3528E-06"
+                iyy="0.002045"
+                iyz="8.3983E-06"
+                izz="0.0020565" />
+            </inertial>
+            <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find robotiq_hand_e)/meshes/wiring_gripper.stl"> 
+                </mesh>
+            </geometry>
+            <material name="">
+                <color
+                    rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+            </material>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <mesh filename="file://$(find robotiq_hand_e)/meshes/wiring_gripper.stl"> 
+                    </mesh>
+                </geometry>
+            </collision>
+            <gravity>0</gravity>
+        </link>
+
+        <joint name="${prefix}gripper_joint" type="fixed">
+            <!-- <xacro:insert_block name="origin" /> -->
+            <origin xyz="${xyz}" rpy="${rpy}"/>
+            <parent link="${parent}"/>
+            <child  link="${prefix}robotiq_hand"/>
+        </joint>
+
+        <link name="${prefix}finger_left">
+            <inertial>
+            <origin
+                xyz="-0.0410573464020155 0.0465900929893167 -0.00138976696740157"
+                rpy="0 0 0" />
+            <mass
+                value="0.0235898515527658" />
+            <inertia
+                ixx="4.9675E-05"
+                ixy="2.4802E-05"
+                ixz="-4.8356E-07"
+                iyy="2.7862E-05"
+                iyz="2.8798E-06"
+                izz="7.1379E-05" />
+            </inertial>
+            <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find robotiq_hand_e)/meshes/hand_e_finger_left_.stl"> 
+                </mesh>
+            </geometry>
+            <material name="">
+                <color
+                    rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+            </material>
+            </visual>
+            <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find robotiq_hand_e)/meshes/hand_e_finger_left_.stl"> 
+                </mesh>
+            </geometry>
+            </collision>
+            <gravity>0</gravity>
+        </link>
+      
+        <joint name="${prefix}bl_to_leftFinger" type="fixed">
+            <origin xyz="0.1133 -0.014 -0.026" rpy="0 3.14 -1.57" />
+            <parent link="${prefix}robotiq_hand" />
+            <child link="${prefix}finger_left" />
+            <axis xyz="0 0 1" />
+            <limit lower="-0.0082" upper="0.0" effort="185" velocity="150" /> 
+        </joint>
+
+        <link name="${prefix}finger_right">
+            <inertial>
+                <origin
+                    xyz="0.0405573941670405 0.0465900943222486 -0.00138976565433925"
+                    rpy="0 0 0" />
+                <mass
+                    value="0.0235898505817182" />
+                <inertia
+                    ixx="4.9675E-05"
+                    ixy="-2.4835E-05"
+                    ixz="4.5546E-07"
+                    iyy="2.7862E-05"
+                    iyz="2.8798E-06"
+                    izz="7.1379E-05" />
+                </inertial>
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                <mesh filename="file://$(find robotiq_hand_e)/meshes/hand_e_finger_right_.stl"> 
+                </mesh>
+                </geometry>
+                <material name="">
+                <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+                </material>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                <mesh filename="file://$(find robotiq_hand_e)/meshes/hand_e_finger_right_.stl"> 
+                </mesh>
+                </geometry>
+            </collision>
+            <gravity>0</gravity>
+        </link>
+
+        <joint name="${prefix}leftFinger_to_rightFinger" type="fixed">
+            <origin xyz="0.0285 0 -0.052" rpy="0 0 0" />
+            <parent link="${prefix}finger_left" />
+            <child link="${prefix}finger_right" />
+            <axis xyz="0 0 1" />
+            <limit lower="0.0" upper="0.045" effort="185" velocity="150" />
+        </joint>
+
+        <link name="${prefix}finger_tip"/>
+        
+        <joint name="${prefix}rightFinger_to_tip" type="fixed">
+            <origin rpy="${pi/2} 0 ${pi/2}" xyz="${finger_tip_cor}"/>
+            <parent link="${prefix}robotiq_hand"/>
+            <child link="${prefix}finger_tip"/>
+            <dynamics damping="0" friction="0"/>
+        </joint>
+ 
+    </xacro:macro>
+
+</robot>

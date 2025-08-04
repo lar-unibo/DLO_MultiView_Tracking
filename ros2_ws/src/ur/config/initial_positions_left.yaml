@@ -1,0 +1,17 @@
+
+# shoulder_pan_joint: -1.57
+# shoulder_lift_joint: -0.94
+# elbow_joint: -1.8
+# wrist_1_joint: -1.57
+# wrist_2_joint: 1.638
+# wrist_3_joint: 0.0
+
+
+#vicino al cavo
+shoulder_pan_joint: -1.4
+shoulder_lift_joint: -1.2278378164536448
+elbow_joint: -1.79104648177057
+wrist_1_joint: -1.447072928025223
+wrist_2_joint: 1.9003329433167337
+wrist_3_joint: -0.7553792167698568
+

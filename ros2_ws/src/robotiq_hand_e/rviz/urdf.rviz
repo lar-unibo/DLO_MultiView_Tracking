@@ -1,0 +1,1375 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /TF1
+        - /TF1/Frames1
+        - /RobotState1
+      Splitter Ratio: 0.5
+    Tree Height: 508
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Name: Time
+    SyncMode: 0
+    SyncSource: ""
+  - Class: rviz_visual_tools/RvizVisualToolsGui
+    Name: RvizVisualToolsGui
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: world
+      Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        ur5_base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5_base_link_inertia:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_finger_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_finger_right:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_finger_tip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5_flange:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5_forearm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_robotiq_hand:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_shoulder_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_tool0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5_upper_arm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_usb_cam:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_wrist_1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_wrist_2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_wrist_3_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5e_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5e_base_link_inertia:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_finger_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_finger_right:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_finger_tip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5e_flange:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5e_forearm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_robotiq_hand:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_shoulder_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_tool0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5e_upper_arm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_wrist_1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_wrist_2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_wrist_3_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        world:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: RobotModel
+      Robot Description: robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Class: rviz/TF
+      Enabled: true
+      Filter (blacklist): ""
+      Filter (whitelist): ""
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        ID000003:
+          Value: false
+        ID000036:
+          Value: false
+        ID000037:
+          Value: false
+        ID000037_corner:
+          Value: false
+        ID000038:
+          Value: false
+        ID000038_corner:
+          Value: false
+        ID000039:
+          Value: false
+        ID000039_corner:
+          Value: false
+        ID000040:
+          Value: false
+        ID000040_corner:
+          Value: false
+        ID000041:
+          Value: false
+        ID000041_corner:
+          Value: false
+        ID000042:
+          Value: false
+        ID000042_corner:
+          Value: false
+        ID000043:
+          Value: false
+        ID000043_corner:
+          Value: false
+        ID000044:
+          Value: false
+        ID000044_corner:
+          Value: false
+        ID000045:
+          Value: false
+        ID000045_corner:
+          Value: false
+        ID000046:
+          Value: false
+        ID000046_corner:
+          Value: false
+        ID000047:
+          Value: false
+        ID000047_corner:
+          Value: false
+        ID000048:
+          Value: false
+        ID000048_corner:
+          Value: false
+        ID000049:
+          Value: false
+        ID000050:
+          Value: false
+        ID000050_corner:
+          Value: false
+        ID000051:
+          Value: false
+        ID000051_corner:
+          Value: false
+        ID000052:
+          Value: false
+        ID000052_corner:
+          Value: false
+        ID000053:
+          Value: false
+        ID000053_corner:
+          Value: false
+        ID000054:
+          Value: false
+        ID000054_corner:
+          Value: false
+        ID000055:
+          Value: false
+        ID000055_corner:
+          Value: false
+        ID000056:
+          Value: false
+        ID000056_corner:
+          Value: false
+        ID000057:
+          Value: false
+        ID000057_corner:
+          Value: false
+        ID000058:
+          Value: false
+        ID000059:
+          Value: false
+        ID000059_corner:
+          Value: false
+        ID000060:
+          Value: false
+        ID000060_corner:
+          Value: false
+        ID000061:
+          Value: false
+        ID000061_corner:
+          Value: false
+        ID000062:
+          Value: false
+        ID000062_corner:
+          Value: false
+        ID000063:
+          Value: false
+        ID000063_corner:
+          Value: false
+        ID000064:
+          Value: false
+        ID000064_corner:
+          Value: false
+        ID000065:
+          Value: false
+        ID000065_corner:
+          Value: false
+        ID000066:
+          Value: false
+        ID000066_corner:
+          Value: false
+        ID000067:
+          Value: false
+        ID000067_corner:
+          Value: false
+        ID000068:
+          Value: false
+        ID000068_corner:
+          Value: false
+        ID000069:
+          Value: false
+        ID000069_corner:
+          Value: false
+        ID000070:
+          Value: false
+        ID000070_corner:
+          Value: false
+        ID000071:
+          Value: false
+        ID000071_corner:
+          Value: false
+        ID000072:
+          Value: false
+        ID000072_corner:
+          Value: false
+        ID000073:
+          Value: false
+        ID000073_corner:
+          Value: false
+        ID000074:
+          Value: false
+        ID000074_corner:
+          Value: false
+        ID000075:
+          Value: false
+        ID000075_corner:
+          Value: false
+        ID000076:
+          Value: false
+        ID000076_corner:
+          Value: false
+        ID000077:
+          Value: false
+        ID000077_corner:
+          Value: false
+        ID000078:
+          Value: false
+        ID000078_corner:
+          Value: false
+        ID000079:
+          Value: false
+        ID000079_corner:
+          Value: false
+        ID000080:
+          Value: false
+        ID000080_corner:
+          Value: false
+        ID000081:
+          Value: false
+        ID000081_corner:
+          Value: false
+        ID000082:
+          Value: false
+        ID000082_corner:
+          Value: false
+        ID000083:
+          Value: false
+        ID000083_corner:
+          Value: false
+        ID000084:
+          Value: false
+        ID000084_corner:
+          Value: false
+        ID000085:
+          Value: false
+        ID000085_corner:
+          Value: false
+        ID000086:
+          Value: false
+        ID000086_corner:
+          Value: false
+        ID000087:
+          Value: false
+        ID000087_corner:
+          Value: false
+        ID000088:
+          Value: false
+        ID000088_corner:
+          Value: false
+        ID000089:
+          Value: false
+        ID000089_corner:
+          Value: false
+        ID000090:
+          Value: false
+        ID000090_corner:
+          Value: false
+        ID000091:
+          Value: false
+        ID000091_corner:
+          Value: false
+        ID000092:
+          Value: false
+        ID000092_corner:
+          Value: false
+        ID000093:
+          Value: false
+        ID000093_corner:
+          Value: false
+        ID000094:
+          Value: false
+        ID000094_corner:
+          Value: false
+        ID000095:
+          Value: false
+        ID000095_corner:
+          Value: false
+        ID000096:
+          Value: false
+        ID000096_corner:
+          Value: false
+        ID000097:
+          Value: false
+        ID000097_corner:
+          Value: false
+        ID000098:
+          Value: false
+        ID000098_corner:
+          Value: false
+        ID000099:
+          Value: false
+        ID000099_corner:
+          Value: false
+        ID000100:
+          Value: false
+        ID000100_corner:
+          Value: false
+        ID000101:
+          Value: false
+        ID000101_corner:
+          Value: false
+        ID000102:
+          Value: false
+        ID000102_corner:
+          Value: false
+        ID000103:
+          Value: false
+        ID000103_corner:
+          Value: false
+        ID000104:
+          Value: false
+        ID000104_corner:
+          Value: false
+        ID000105:
+          Value: false
+        ID000105_corner:
+          Value: false
+        ID000106:
+          Value: false
+        ID000106_corner:
+          Value: false
+        ID000107:
+          Value: false
+        ID000107_corner:
+          Value: false
+        ID000108:
+          Value: false
+        ID000108_corner:
+          Value: false
+        ID000109:
+          Value: false
+        ID000109_corner:
+          Value: false
+        ID000110:
+          Value: false
+        ID000110_corner:
+          Value: false
+        ID000111:
+          Value: false
+        ID000111_corner:
+          Value: false
+        ID000112:
+          Value: false
+        ID000112_corner:
+          Value: false
+        ID000113:
+          Value: false
+        ID000113_corner:
+          Value: false
+        ID000114:
+          Value: false
+        ID000114_corner:
+          Value: false
+        ID000116:
+          Value: false
+        ID000116_corner:
+          Value: false
+        ID000117:
+          Value: false
+        ID000117_corner:
+          Value: false
+        ID000118:
+          Value: false
+        ID000118_corner:
+          Value: false
+        ID000119:
+          Value: false
+        ID000119_corner:
+          Value: false
+        ID000120:
+          Value: false
+        ID000120_corner:
+          Value: false
+        ID000121:
+          Value: false
+        ID000121_corner:
+          Value: false
+        ID000122:
+          Value: false
+        ID000122_corner:
+          Value: false
+        ID000123:
+          Value: false
+        ID000123_corner:
+          Value: false
+        ID000124:
+          Value: false
+        ID000124_corner:
+          Value: false
+        ID000125:
+          Value: false
+        ID000125_corner:
+          Value: false
+        ID000126:
+          Value: false
+        ID000126_corner:
+          Value: false
+        ID000127:
+          Value: false
+        ID000127_corner:
+          Value: false
+        I_-CN1_-CN3:
+          Value: false
+        I_-CN2_-CN3:
+          Value: false
+        I_-CN3_-CN1:
+          Value: false
+        I_-CN3_-CN2:
+          Value: false
+        I_-CN3_-CN4:
+          Value: false
+        I_-CN3_-CN5:
+          Value: false
+        I_-CN4_-CN3:
+          Value: false
+        I_-CN5_-CN3:
+          Value: false
+        base_link:
+          Value: false
+        channel0:
+          Value: false
+        channel1:
+          Value: false
+        channel2:
+          Value: false
+        channel3:
+          Value: false
+        channel4:
+          Value: false
+        frame_prova0:
+          Value: true
+        frame_prova1:
+          Value: false
+        gearbox:
+          Value: false
+        gearbox_rf:
+          Value: false
+        riga_0_Clip_A1_colonna_0:
+          Value: false
+        riga_0_Clip_A2_colonna_0:
+          Value: false
+        riga_0_Clip_B1_colonna_0:
+          Value: false
+        riga_0_Clip_B2_colonna_0:
+          Value: false
+        righe_warehouse_0:
+          Value: false
+        ur5_base:
+          Value: false
+        ur5_base_link:
+          Value: false
+        ur5_base_link_inertia:
+          Value: false
+        ur5_finger_left:
+          Value: false
+        ur5_finger_right:
+          Value: false
+        ur5_finger_tip:
+          Value: false
+        ur5_flange:
+          Value: false
+        ur5_forearm_link:
+          Value: false
+        ur5_robotiq_hand:
+          Value: false
+        ur5_shoulder_link:
+          Value: false
+        ur5_tool0:
+          Value: false
+        ur5_upper_arm_link:
+          Value: false
+        ur5_usb_cam:
+          Value: false
+        ur5_wrist_1_link:
+          Value: false
+        ur5_wrist_2_link:
+          Value: false
+        ur5_wrist_3_link:
+          Value: false
+        ur5e_base:
+          Value: false
+        ur5e_base_link:
+          Value: false
+        ur5e_base_link_inertia:
+          Value: false
+        ur5e_finger_left:
+          Value: false
+        ur5e_finger_right:
+          Value: false
+        ur5e_finger_tip:
+          Value: true
+        ur5e_flange:
+          Value: false
+        ur5e_forearm_link:
+          Value: false
+        ur5e_robotiq_hand:
+          Value: false
+        ur5e_shoulder_link:
+          Value: false
+        ur5e_tool0:
+          Value: false
+        ur5e_upper_arm_link:
+          Value: false
+        ur5e_wrist_1_link:
+          Value: false
+        ur5e_wrist_2_link:
+          Value: false
+        ur5e_wrist_3_link:
+          Value: false
+        warehouse/world:
+          Value: false
+        world:
+          Value: false
+      Marker Alpha: 1
+      Marker Scale: 0.5
+      Name: TF
+      Show Arrows: false
+      Show Axes: true
+      Show Names: false
+      Tree:
+        world:
+          base_link:
+            righe_warehouse_0:
+              riga_0_Clip_A1_colonna_0:
+                riga_0_Clip_B1_colonna_0:
+                  riga_0_Clip_A2_colonna_0:
+                    riga_0_Clip_B2_colonna_0:
+                      {}
+          frame_prova0:
+            {}
+          frame_prova1:
+            {}
+          gearbox_rf:
+            ID000003:
+              ID000036:
+                ID000037:
+                  ID000037_corner:
+                    {}
+                ID000038:
+                  ID000038_corner:
+                    {}
+                ID000039:
+                  ID000039_corner:
+                    {}
+                ID000040:
+                  ID000040_corner:
+                    {}
+                ID000041:
+                  ID000041_corner:
+                    {}
+                ID000042:
+                  ID000042_corner:
+                    {}
+                  ID000043:
+                    ID000043_corner:
+                      {}
+                ID000044:
+                  ID000044_corner:
+                    {}
+                ID000045:
+                  ID000045_corner:
+                    {}
+                ID000046:
+                  ID000046_corner:
+                    {}
+                ID000047:
+                  ID000047_corner:
+                    {}
+                ID000048:
+                  ID000048_corner:
+                    {}
+              ID000049:
+                ID000050:
+                  ID000050_corner:
+                    {}
+                  ID000051:
+                    ID000051_corner:
+                      {}
+                ID000052:
+                  ID000052_corner:
+                    {}
+                  ID000053:
+                    ID000053_corner:
+                      {}
+                ID000054:
+                  ID000054_corner:
+                    {}
+                ID000055:
+                  ID000055_corner:
+                    {}
+                ID000056:
+                  ID000056_corner:
+                    {}
+                ID000057:
+                  ID000057_corner:
+                    {}
+              ID000058:
+                ID000059:
+                  ID000059_corner:
+                    {}
+                ID000060:
+                  ID000060_corner:
+                    {}
+                ID000061:
+                  ID000061_corner:
+                    {}
+                ID000062:
+                  ID000062_corner:
+                    {}
+                ID000063:
+                  ID000063_corner:
+                    {}
+                ID000064:
+                  ID000064_corner:
+                    {}
+                ID000065:
+                  ID000065_corner:
+                    {}
+                ID000066:
+                  ID000066_corner:
+                    {}
+                ID000067:
+                  ID000067_corner:
+                    {}
+                ID000068:
+                  ID000068_corner:
+                    {}
+                ID000069:
+                  ID000069_corner:
+                    {}
+                ID000070:
+                  ID000070_corner:
+                    {}
+                ID000071:
+                  ID000071_corner:
+                    {}
+                ID000072:
+                  ID000072_corner:
+                    {}
+                ID000073:
+                  ID000073_corner:
+                    {}
+                ID000074:
+                  ID000074_corner:
+                    {}
+                ID000075:
+                  ID000075_corner:
+                    {}
+                ID000076:
+                  ID000076_corner:
+                    {}
+                ID000077:
+                  ID000077_corner:
+                    {}
+                ID000078:
+                  ID000078_corner:
+                    {}
+                ID000079:
+                  ID000079_corner:
+                    {}
+                ID000080:
+                  ID000080_corner:
+                    {}
+                ID000081:
+                  ID000081_corner:
+                    {}
+                ID000082:
+                  ID000082_corner:
+                    {}
+                ID000083:
+                  ID000083_corner:
+                    {}
+                ID000084:
+                  ID000084_corner:
+                    {}
+                ID000085:
+                  ID000085_corner:
+                    {}
+                ID000086:
+                  ID000086_corner:
+                    {}
+                ID000087:
+                  ID000087_corner:
+                    {}
+                ID000088:
+                  ID000088_corner:
+                    {}
+                ID000089:
+                  ID000089_corner:
+                    {}
+                ID000090:
+                  ID000090_corner:
+                    {}
+                ID000091:
+                  ID000091_corner:
+                    {}
+                ID000092:
+                  ID000092_corner:
+                    {}
+                ID000093:
+                  ID000093_corner:
+                    {}
+                ID000094:
+                  ID000094_corner:
+                    {}
+                ID000095:
+                  ID000095_corner:
+                    {}
+                ID000096:
+                  ID000096_corner:
+                    {}
+                ID000097:
+                  ID000097_corner:
+                    {}
+                ID000098:
+                  ID000098_corner:
+                    {}
+                ID000099:
+                  ID000099_corner:
+                    {}
+                ID000100:
+                  ID000100_corner:
+                    {}
+                ID000101:
+                  ID000101_corner:
+                    {}
+                ID000102:
+                  ID000102_corner:
+                    {}
+                ID000103:
+                  ID000103_corner:
+                    {}
+                ID000104:
+                  ID000104_corner:
+                    {}
+                ID000105:
+                  ID000105_corner:
+                    {}
+                ID000106:
+                  ID000106_corner:
+                    {}
+                ID000107:
+                  ID000107_corner:
+                    {}
+                ID000108:
+                  ID000108_corner:
+                    {}
+                ID000109:
+                  ID000109_corner:
+                    {}
+                ID000110:
+                  ID000110_corner:
+                    {}
+                ID000111:
+                  ID000111_corner:
+                    {}
+                ID000112:
+                  ID000112_corner:
+                    {}
+                ID000113:
+                  ID000113_corner:
+                    {}
+                ID000114:
+                  ID000114_corner:
+                    {}
+                ID000116:
+                  ID000116_corner:
+                    {}
+                ID000117:
+                  ID000117_corner:
+                    {}
+                ID000118:
+                  ID000118_corner:
+                    {}
+                ID000119:
+                  ID000119_corner:
+                    {}
+                ID000120:
+                  ID000120_corner:
+                    {}
+                ID000121:
+                  ID000121_corner:
+                    {}
+                ID000122:
+                  ID000122_corner:
+                    {}
+                ID000123:
+                  ID000123_corner:
+                    {}
+                ID000124:
+                  ID000124_corner:
+                    {}
+                ID000125:
+                  ID000125_corner:
+                    {}
+                ID000126:
+                  ID000126_corner:
+                    {}
+                ID000127:
+                  ID000127_corner:
+                    {}
+              gearbox:
+                I_-CN1_-CN3:
+                  {}
+                I_-CN2_-CN3:
+                  {}
+                I_-CN3_-CN1:
+                  {}
+                I_-CN3_-CN2:
+                  {}
+                I_-CN3_-CN4:
+                  {}
+                I_-CN3_-CN5:
+                  {}
+                I_-CN4_-CN3:
+                  {}
+                I_-CN5_-CN3:
+                  {}
+                channel0:
+                  {}
+                channel1:
+                  {}
+                channel2:
+                  {}
+                channel3:
+                  {}
+                channel4:
+                  {}
+          ur5_base_link:
+            ur5_base:
+              {}
+            ur5_base_link_inertia:
+              ur5_shoulder_link:
+                ur5_upper_arm_link:
+                  ur5_forearm_link:
+                    ur5_wrist_1_link:
+                      ur5_wrist_2_link:
+                        ur5_wrist_3_link:
+                          ur5_flange:
+                            ur5_tool0:
+                              ur5_robotiq_hand:
+                                ur5_finger_left:
+                                  ur5_finger_right:
+                                    {}
+                                ur5_finger_tip:
+                                  {}
+                                ur5_usb_cam:
+                                  {}
+          ur5e_base_link:
+            ur5e_base:
+              {}
+            ur5e_base_link_inertia:
+              ur5e_shoulder_link:
+                ur5e_upper_arm_link:
+                  ur5e_forearm_link:
+                    ur5e_wrist_1_link:
+                      ur5e_wrist_2_link:
+                        ur5e_wrist_3_link:
+                          ur5e_flange:
+                            ur5e_tool0:
+                              ur5e_robotiq_hand:
+                                ur5e_finger_left:
+                                  ur5e_finger_right:
+                                    {}
+                                ur5e_finger_tip:
+                                  {}
+          warehouse/world:
+            {}
+      Update Interval: 0
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: visualization_marker_array
+      Name: GearbboxVisualizer
+      Namespaces:
+        "": true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: interactive_robot_markers
+      Name: Marker
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: interactive_robot_marray
+      Name: MarkerArray
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+    - Class: rviz/InteractiveMarkers
+      Enable Transparency: true
+      Enabled: true
+      Name: InteractiveMarkers
+      Show Axes: false
+      Show Descriptions: true
+      Show Visual Aids: false
+      Update Topic: interactive_robot_imarkers/update
+      Value: true
+    - Attached Body Color: 150; 50; 150
+      Class: moveit_rviz_plugin/RobotState
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        ur5_base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5_base_link_inertia:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_finger_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_finger_right:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_finger_tip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5_flange:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5_forearm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_robotiq_hand:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_shoulder_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_tool0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5_upper_arm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_usb_cam:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_wrist_1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_wrist_2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5_wrist_3_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5e_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5e_base_link_inertia:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_finger_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_finger_right:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_finger_tip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5e_flange:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5e_forearm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_robotiq_hand:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_shoulder_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_tool0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5e_upper_arm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_wrist_1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_wrist_2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur5e_wrist_3_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        world:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: RobotState
+      Robot Alpha: 1
+      Robot Description: robot_description
+      Robot State Topic: /collision_checker/interactive_robot_state
+      Show All Links: true
+      Show Highlights: true
+      Value: true
+      Visual Enabled: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        riga_0_Clip_A1_colonna_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        riga_0_Clip_A2_colonna_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        riga_0_Clip_B1_colonna_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        riga_0_Clip_B2_colonna_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        righe_warehouse_0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        world:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: RobotModel
+      Robot Description: warehouse/robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Default Light: true
+    Fixed Frame: world
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Theta std deviation: 0.2617993950843811
+      Topic: /initialpose
+      X std deviation: 0.5
+      Y std deviation: 0.5
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 2.0780935287475586
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Field of View: 0.7853981852531433
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 0.4403970241546631
+      Target Frame: <Fixed Frame>
+      Yaw: 6.186767578125
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 882
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd000000040000000000000164000002cefc0200000009fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d00000287000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb00000024005200760069007a00560069007300750061006c0054006f006f006c007300470075006901000002ca000000410000004100ffffff000000010000010f000002cefc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000003d000002ce000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000004f300000044fc0100000002fb0000000800540069006d00650100000000000004f3000003bc00fffffffb0000000800540069006d0065010000000000000450000000000000000000000274000002ce00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  RvizVisualToolsGui:
+    collapsed: false
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1267
+  X: 2222
+  Y: 83

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<robot name="end_effectors" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:macro name="wiring_gripper"  params="prefix parent rpy:='0 0 0' finger_tip_cor:='0 0 0' xyz:='0 0 0'" > <!-- *origin-->
+    <link name="${prefix}robotiq_hand">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="file://$(find robotiq_hand_e)/meshes/robotiq_hand-e.stl"> 
+                </mesh>
+            </geometry>
+            <material name="robotiq_hand-e_defeature_20181026_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="file://$(find robotiq_hand_e)/meshes/robotiq_hand-e.stl"> 
+                </mesh>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="1.1788244411654582311e-07 -0.034917517500914367623 6.5928183311661148398e-05" rpy="0 0 0"/>
+            <mass value="0.49999940317008007007" />
+            <inertia ixx="0.00072082076221095391262" ixy="2.6284710710523165647e-09"  ixz="4.6637535483481760509e-06" iyy="0.00029136122738011410423" iyz="1.3508364359206165819e-06" izz="0.00069444163506927577331" />
+        </inertial>
+        <gravity>0</gravity>
+    </link>
+
+    <joint name="${prefix}gripper_joint" type="fixed">
+        <!-- <xacro:insert_block name="origin" /> -->
+        <origin xyz="${xyz}" rpy="${rpy}"/>
+        <parent link="${parent}"/>
+        <child  link="${prefix}robotiq_hand"/>
+    </joint>
+</xacro:macro>
+
+
+</robot>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+
+    <xacro:macro name="robotiq_trasmission" params="prefix hw_interface">
+
+        <transmission name="${prefix}leftFinger_trans">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="${prefix}bl_to_leftFinger">
+            <hardwareInterface>${hw_interface}</hardwareInterface>
+            </joint>
+            <actuator name="${prefix}leftFinger_motor">
+            <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+        </transmission>
+
+        <transmission name="${prefix}rightFinger_trans">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="${prefix}leftFinger_to_rightFinger">
+            <hardwareInterface>${hw_interface}</hardwareInterface>
+            </joint>
+            <actuator name="${prefix}rightFinger_motor">
+            <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+        </transmission>
+        
+    </xacro:macro>
+</robot>

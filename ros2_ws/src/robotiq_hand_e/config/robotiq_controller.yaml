@@ -1,0 +1,22 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 500  # Hz
+
+    ur_right_hand_controller:
+      type: position_controllers/JointGroupPositionController
+
+    ur_left_hand_controller:
+      type: position_controllers/JointGroupPositionController
+
+ur_right_hand_controller:
+  ros__parameters:
+    joints:
+      - ur_right_bl_to_leftFinger
+      - ur_right_leftFinger_to_rightFinger
+
+ur_left_hand_controller:
+  ros__parameters:
+    joints:
+      - ur_left_bl_to_leftFinger
+      - ur_left_leftFinger_to_rightFinger

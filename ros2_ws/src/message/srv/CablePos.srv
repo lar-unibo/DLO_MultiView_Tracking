@@ -1,0 +1,3 @@
+message/ListMsg[] cable_pos
+---
+bool success
