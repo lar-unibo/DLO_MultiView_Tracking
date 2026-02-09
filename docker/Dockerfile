@@ -51,7 +51,7 @@ RUN pip install \
       depthai \
       pymeshfix  \
       trimesh \
-      mesh_to_sdf \
+      mesh_to_sdf
 
 RUN pip install \  
       torch_geometric==2.6.1 \
